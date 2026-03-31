@@ -1,26 +1,20 @@
 # Phase 1 – Filtering and Selection
 
 ## 🔹 Objective
-This phase focuses on building confidence with basic SQL queries and equivalent PySpark DataFrame operations using a simple customers dataset.
+In this phase, the goal is to build confidence with basic SQL queries and their equivalent PySpark DataFrame operations using a simple customers dataset. Focus areas include show(), select(), filter(), and basic groupBy().
 
 ---
 
-## 🔹 Problem Statement (Summary)
+## 🔹 Problem Summary
+We were given a customers dataset with fields customer_id, customer_name, city, and age.
+The task was to:
 - Show all records from the customers table
 - Filter customers based on city
 - Filter customers based on age condition
 - Select specific columns from the dataset
 - Count customers grouped by city
 
-👉 Detailed problem statement is available in:
-`phase1_problem_statement.pdf`
-
----
-
-## 🔹 Dataset Used
-- **Dataset:** Customers (simple starter dataset)
-- **Source:** Provided as part of Capgemini Week 0 training material
-- **Tables used:** customers (customer_id, customer_name, city, age)
+👉 Detailed problem statement is available in: `phase1_problem_statement.pdf`
 
 ---
 
@@ -28,18 +22,19 @@ This phase focuses on building confidence with basic SQL queries and equivalent 
 1. Created the customers DataFrame using `spark.createDataFrame()`
 2. Used `.show()` to display all records
 3. Applied `.filter()` to filter rows based on city and age conditions
-4. Used `.select()` to retrieve specific columns
+4. Used `.select()` to retrieve only required columns
 5. Applied `.groupBy()` with `.agg(F.count())` to count customers city-wise
 
 ---
 
-## 🔹 Key Transformations
-- `.show()` — display all records
-- `.filter()` — filter rows based on conditions
-- `.select()` — select specific columns
-- `.groupBy()` and `.agg()` — group and aggregate data
-- `F.count()` — count rows per group
-- `F.desc()` — sort in descending order
+## 🔹 Key Transformations Used
+- `createDataFrame()` → to load data into a PySpark DataFrame
+- `show()` → to display records
+- `filter()` → to apply row-level conditions (equivalent to SQL WHERE)
+- `select()` → to choose specific columns (equivalent to SQL SELECT)
+- `groupBy()` + `agg()` → to group and aggregate data (equivalent to SQL GROUP BY)
+- `F.count()` → to count rows per group
+- `F.desc()` → to sort results in descending order
 
 ---
 
@@ -50,13 +45,21 @@ This phase focuses on building confidence with basic SQL queries and equivalent 
 - Only customer_name and city columns selected
 - Customer count per city in descending order
 
-(Screenshots available in `/Outputs` folder)
+Screenshots of outputs are available in the `Outputs/` folder.
+
+---
+
+## 🔹 Data Engineering Considerations
+- Kept data types consistent while creating the DataFrame
+- Used column references via `F.col()` for safer and more readable filter conditions
+- Avoided hardcoded column positions — used column names throughout
 
 ---
 
 ## 🔹 Challenges Faced
 - Setting up PySpark locally on Windows had multiple issues (Java not found, pip not recognized, PySpark version incompatibility with Python 3.12)
-- Used SparkPlayground online compiler as an alternative to run the code
+- Used SparkPlayground online compiler as an alternative to run the PySpark code
+- Used DB Fiddle to run and verify SQL queries
 
 ---
 
@@ -64,12 +67,12 @@ This phase focuses on building confidence with basic SQL queries and equivalent 
 - How SQL concepts like SELECT, WHERE, and GROUP BY map to PySpark methods
 - How to create and work with PySpark DataFrames
 - Difference between `.filter()` and `.select()` in PySpark
-- How to use `functions` module (`F`) for aggregations and column operations
+- How to use the `functions` module (`F`) for aggregations and column operations
 
 ---
 
 ## 🔹 Files in this Folder
 - `phase1_problem_statement.pdf` → Problem description
-- `sql_queries.sql` → SQL implementation of all exercises
-- `pyspark_code.py` → PySpark implementation of all exercises
+- `solution.py` → PySpark implementation with comments
+- `queries.sql` → SQL implementation with comments
 - `Outputs/` → Screenshots of query results
