@@ -1,81 +1,80 @@
-# Phase 2 – Joins and Aggregations
+# Phase 2 – Data Transformation using PySpark
 
 ## 🔹 Objective
-This phase focuses on bridging the gap between basic SQL-to-PySpark syntax and real-world data engineering tasks. It involves working with sample datasets, performing light data cleaning, and solving realistic joins and aggregations.
+In this phase, the goal is to perform data transformations on the given dataset using PySpark. This includes joining multiple tables, applying aggregations, and generating meaningful business insights.
 
 ---
 
-## 🔹 Problem Statement (Summary)
-- Load customers and orders datasets from CSV files
-- Perform light data cleaning (remove rows with missing customer_id)
-- Calculate total order amount for each customer
-- Find top 3 customers by total spend
-- Identify customers with no orders (left join)
+## 🔹 Problem Summary
+We were given two datasets — customers and sales (orders).
+The task was to:
+- Combine data from customers and sales tables using joins
+- Perform aggregations to calculate total spend, average spend, and order count per customer
+- Identify customers with no orders using left join
 - Calculate city-wise total revenue
-- Find average order amount per customer
-- Find customers with more than one order
-- Sort customers by total spend in descending order
+- Find top customers by total spend
 
-👉 Detailed problem statement is available in:
-`phase2_problem_statement.pdf`
-
----
-
-## 🔹 Dataset Used
-- **Dataset:** SparkPlayground sample files
-- **Source:** SparkPlayground online compiler (`/samples/`)
-- **Tables used:** customers, orders
+👉 Detailed problem statement is available in: `phase2_problem_statement.pdf`
 
 ---
 
 ## 🔹 Approach
-1. Loaded customers and orders CSV files using `spark.read.option("header", "true").csv()`
-2. Inspected schema using `printSchema()`
-3. Cleaned data by removing rows with null customer_id using `dropna()`
-4. Performed inner joins to calculate aggregations across both tables
-5. Used left join to find customers with no orders
-6. Applied `groupBy()` with `agg()` for sum, count, and average calculations
-7. Used `orderBy()` and `limit()` for top-N results
+1. Loaded customers and sales datasets from SparkPlayground sample CSV files
+2. Performed basic data cleaning:
+   - Removed null values in customer_id using `dropna()`
+   - Cast total_amount from string to double using `withColumn()` and `cast()`
+3. Created a joined DataFrame using left join to retain all customers
+4. Applied transformations:
+   - `groupBy()` and `agg()` for aggregations
+   - `filter()` with `isNull()` to find customers with no orders
+   - `orderBy()` and `limit()` for top-N results
 
 ---
 
-## 🔹 Key Transformations
-- `spark.read.csv()` — load CSV files with header
-- `printSchema()` — inspect column types
-- `dropna()` — remove rows with null values
-- `.join(..., how="inner")` — join tables on customer_id
-- `.join(..., how="left")` — left join to find unmatched records
-- `F.isNull()` — filter null values after left join
-- `F.sum()`, `F.avg()`, `F.count()` — aggregation functions
-- `F.round()` — round decimal values
-- `F.desc()` — sort in descending order
-- `.limit()` — restrict output to top N rows
+## 🔹 Key Transformations Used
+- `spark.read.csv()` → to load CSV files into DataFrames
+- `dropna()` → to remove rows with null customer_id
+- `withColumn()` + `cast()` → to convert string columns to numeric types
+- `join()` → to combine customers and sales tables
+- `groupBy()` + `agg()` → to calculate sum, average, and count
+- `filter()` + `isNull()` → to find unmatched records after left join
+- `orderBy()` + `limit()` → to get top-N results
+- `F.round()` → to round decimal values to 2 places
 
 ---
 
 ## 🔹 Output / Results
 - Total order amount per customer
 - Top 3 customers by total spend
-- Customers with no orders
+- Customers with no sales records
 - City-wise total revenue
 - Average order amount per customer
 - Customers with more than one order
 - All customers sorted by total spend descending
 
-(Screenshots available in `/outputs` folder)
+Screenshots of outputs are available in the `Outputs/` folder.
+
+---
+
+## 🔹 Data Engineering Considerations
+- Handled null values before performing joins to avoid incorrect aggregations
+- Cast all numeric columns from string type after CSV load
+- Used left join to ensure customers with no orders are also captured
+- Reused aggregated DataFrame (`res1`) across multiple queries to avoid redundant computation
 
 ---
 
 ## 🔹 Challenges Faced
 - Understanding the difference between inner join and left join
-- Filtering null values correctly after a left join using `isNull()`
+- Filtering null values correctly after left join using `isNull()`
 - Mapping SQL HAVING clause to PySpark `.filter()` after `.agg()`
+- CSV files load all columns as string by default — had to cast manually
 
 ---
 
 ## 🔹 Learnings
 - How to load and inspect CSV files in PySpark
-- How to clean data before processing using `dropna()`
+- How to clean data before processing using `dropna()` and `cast()`
 - How SQL JOIN types map to PySpark join types (inner, left)
 - How to use multiple aggregation functions together in `.agg()`
 - How to find unmatched records using left join + `isNull()` filter
@@ -84,6 +83,6 @@ This phase focuses on bridging the gap between basic SQL-to-PySpark syntax and r
 
 ## 🔹 Files in this Folder
 - `phase2_problem_statement.pdf` → Problem description
-- `solution.py` → PySpark implementation of all exercises
-- `queries.sql` → SQL implementation of all exercises
-- `outputs/` → Screenshots of query results
+- `solution.py` → PySpark implementation with comments
+- `queries.sql` → SQL implementation with comments
+- `Outputs/` → Screenshots of query results
