@@ -65,7 +65,6 @@ Screenshots of outputs are available in the `Outputs/` folder.
 ---
 
 ## 🔹 Challenges Faced
-- Understanding the difference between inner join and left join
 - Filtering null values correctly after left join using `isNull()`
 - Mapping SQL HAVING clause to PySpark `.filter()` after `.agg()`
 - CSV files load all columns as string by default — had to cast manually
@@ -75,7 +74,6 @@ Screenshots of outputs are available in the `Outputs/` folder.
 ## 🔹 Learnings
 - How to load and inspect CSV files in PySpark
 - How to clean data before processing using `dropna()` and `cast()`
-- How SQL JOIN types map to PySpark join types (inner, left)
 - How to use multiple aggregation functions together in `.agg()`
 - How to find unmatched records using left join + `isNull()` filter
 
