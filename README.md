@@ -3,26 +3,49 @@
 This repository contains my work for Capgemini Data Engineering Training. The focus of this training is to learn SQL and PySpark concepts and apply them to build data pipelines and perform basic analytics.
 
 ---
-
 ## 🗂️ Repository Structure
 
 ```
-week0/
-  phase1 → Filtering & Selection
-  phase2 → Joins & Aggregations
-  phase3 → ETL Pipeline
-  phase3A → Data Quality & Cleaning
-  phase4 → Business Pipeline & Analytics
-  phase4A → Bucketing & Segmentation
+capgemini-data-engineering-training/
+│
+├── README.md
+├── mini-project/                  → Upcoming work
+│
+├── week0/                         → SQL & PySpark Foundations
+│   ├── phase0/                    → Learning materials (PDFs)
+│   ├── phase1/                    → Filtering & Selection
+│   ├── phase2/                    → Joins & Aggregations
+│   ├── phase3/                    → ETL Pipeline
+│   ├── phase3A/                   → Data Quality & Cleaning
+│   ├── phase4/                    → Business Pipeline & Analytics
+│   ├── phase4A/                   → Bucketing & Segmentation
+│   ├── phase5/                    → Advanced Transformations (Pending)
+│   └── phase6/                    → Capstone Pipeline (Pending)
+│
+├── week1/                         → Real-world datasets practice
+│   ├── Day1/
+│   ├── Day2_Olist/
+│   ├── Day2_BFSI/
+│   ├── Day3_Olist/
+│   ├── Day3_BFSI/
+│   ├── Day4_Olist/
+│   ├── Day4_BFSI/
+│   ├── Day5_Olist/
+│   └── Day5_BFSI/
+│
+├── week2/                         → Upcoming work
+└── week3/                         → Upcoming work
 ```
 
-Each phase contains:
+Each phase folder contains:
 
-* solution.py (PySpark code)
+* solution.py (PySpark implementation)
 * queries.sql (SQL queries)
-* problem statement PDF
-* Outputs folder (screenshots)
+* phaseX_problem_statement.pdf
+* Outputs/ (screenshots)
 * README.md
+
+
 
 ---
 
@@ -322,4 +345,7 @@ To understand different methods of segmentation.
 ## 👤 Author
 
 Dwibhashyam Amarnath Sharma
+
 22PA1A1240
+
+Capgemini Data Engineering Trainee
