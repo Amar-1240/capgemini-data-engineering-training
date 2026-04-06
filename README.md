@@ -1,349 +1,335 @@
-# 🚀 Capgemini Data Engineering Training
-### PySpark · SQL · ETL Pipelines · Databricks · Real-World Datasets
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
-![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-Amar--1240-181717?style=for-the-badge&logo=github&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+# 👨‍💻 Capgemini Data Engineering Training
+
+**From zero to production-grade ETL pipelines — one phase at a time.**
+
+[![Python](https://img.shields.io/badge/Python_3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![PySpark](https://img.shields.io/badge/PySpark_3.5.1-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)](https://spark.apache.org)
+[![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)](https://databricks.com)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
+[![GitHub](https://img.shields.io/badge/Amar--1240-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Amar-1240)
+
+![Week 0](https://img.shields.io/badge/Week_0-8_of_8_Phases_Done-00C853?style=flat-square)
+![Week 1](https://img.shields.io/badge/Week_1-Upcoming-FF6F00?style=flat-square)
+![Week 2](https://img.shields.io/badge/Week_2-Upcoming-9E9E9E?style=flat-square)
+![Week 3](https://img.shields.io/badge/Week_3-Upcoming-9E9E9E?style=flat-square)
+
+<br/>
+
+> *"Clean before you join. Filter before you aggregate. Validate before you trust."*
+
+</div>
 
 ---
 
-## 📌 About This Repository
-
-This repository documents my complete **Data Engineering training journey** at **Capgemini**, progressing from SQL fundamentals to building production-grade ETL pipelines using **PySpark** and **Databricks**.
-
-Each phase is a hands-on, week-by-week progression — no theory without code, no code without purpose.
-
-> **Core philosophy:** *Clean before you join. Filter before you aggregate. Validate before you trust.*
-
----
-
-## 📁 Repository Structure
+## 🗂️ Repository Structure
 
 ```
 capgemini-data-engineering-training/
 │
-├── week0/                          → SQL & PySpark Foundations
-│   ├── phase0/                     → Learning Materials (PDFs)
-│   ├── phase1/                     → Filtering and Selection ✅
-│   ├── phase2/                     → Joins and Aggregations ✅
-│   ├── phase3/                     → ETL Pipeline ✅
-│   ├── phase3A/                    → Data Quality & Cleaning ✅
-│   ├── phase4/                     → Business Pipeline & Analytics ✅
-│   ├── phase4A/                    → Bucketing & Segmentation ✅
-│   ├── phase5/                     → Advanced Transformations 🔄
-│   └── phase6/                     → Capstone Pipeline ⏳
+├── week0/                    → SQL & PySpark Foundations
+│   ├── phase0/               → Learning Materials (PDFs)
+│   ├── phase1/               → Filtering & Selection          ✅
+│   ├── phase2/               → Joins & Aggregations           ✅
+│   ├── phase3/               → ETL Pipeline                   ✅
+│   ├── phase3A/              → Data Quality & Cleaning        ✅
+│   ├── phase4/               → Business Pipeline & Analytics  ✅
+│   ├── phase4A/              → Bucketing & Segmentation       ✅
+│   ├── phase5/               → Advanced Transformations       🔄
+│   └── phase6/               → Capstone Pipeline              ⏳
 │
-├── week1/                          → Real World Datasets (Upcoming)
-│   ├── Day1/
-│   ├── Day2_Olist/
-│   ├── Day2_BFSI/
-│   ├── Day3_Olist/
-│   ├── Day3_BFSI/
-│   ├── Day4_Olist/
-│   ├── Day4_BFSI/
-│   ├── Day5_Olist/
-│   └── Day5_BFSI/
+├── week1/                    → Real-World Datasets (Olist + BFSI)
+│   ├── Day1/ · Day2_Olist/ · Day2_BFSI/
+│   ├── Day3_Olist/ · Day3_BFSI/
+│   ├── Day4_Olist/ · Day4_BFSI/
+│   └── Day5_Olist/ · Day5_BFSI/
 │
-├── week2/                          → Upcoming
-├── week3/                          → Upcoming
-├── mini-project/                   → Upcoming
+├── week2/                    → Upcoming
+├── week3/                    → Upcoming
+├── mini-project/             → Upcoming
 └── README.md
+```
+
+Each phase folder follows a strict structure:
+```
+phaseX/
+├── README.md                     → 8-section documentation
+├── solution.py                   → PySpark implementation
+├── queries.sql                   → SQL implementation
+├── phaseX_problem_statement.pdf  → Original problem statement
+└── Outputs/                      → Query result screenshots
 ```
 
 ---
 
-## 📊 Progress Tracker
+## 📊 Progress at a Glance
 
-### Week 0 – SQL & PySpark Foundations
+### Week 0 — SQL & PySpark Foundations
 
-| Phase | Topic | Key Concepts | Status |
-|-------|-------|-------------|--------|
-| Phase 0 | Learning Materials | Databricks, Lakeflow, DevOps for DE | ✅ Completed |
-| Phase 1 | Filtering and Selection | `filter()`, `select()`, `groupBy()` | ✅ Completed |
-| Phase 2 | Joins and Aggregations | `join()`, `agg()`, `dropna()`, `cast()` | ✅ Completed |
-| Phase 3 | ETL Pipeline | CSV/JSON/Parquet ingestion, full pipeline | ✅ Completed |
-| Phase 3A | Data Quality & Cleaning | `fillna()`, `dropDuplicates()`, validation | ✅ Completed |
-| Phase 4 | Business Pipeline & Analytics | End-to-end pipeline, segmentation, CSV output | ✅ Completed |
-| Phase 4A | Bucketing & Segmentation | `F.when()`, `Bucketizer`, `approxQuantile()` | ✅ Completed |
-| Phase 5 | Advanced Transformations | TBD | 🔄 In Progress |
-| Phase 6 | Capstone Pipeline | TBD | ⏳ Pending |
+| # | Phase | What I Built | Core Skills | Status |
+|---|-------|-------------|-------------|--------|
+| 0 | Setup | Learning materials | Databricks, Lakeflow, DevOps for DE | ✅ |
+| 1 | Filtering & Selection | Customer filter queries | `filter()` `select()` `groupBy()` | ✅ |
+| 2 | Joins & Aggregations | Multi-table join pipeline | `join()` `agg()` `dropna()` `cast()` | ✅ |
+| 3 | ETL Pipeline | Full extract→transform→load pipeline | CSV/JSON/Parquet ingestion | ✅ |
+| 3A | Data Quality | Messy data → clean data validator | `fillna()` `dropDuplicates()` `filter()` | ✅ |
+| 4 | Business Pipeline | 7-task end-to-end analytics pipeline | Segmentation, reporting, CSV export | ✅ |
+| 4A | Bucketing | 3-method segmentation comparison | `F.when()` `Bucketizer` `approxQuantile()` | ✅ |
+| 5 | Advanced Transforms | — | Window functions, complex joins | 🔄 |
+| 6 | Capstone | — | Full pipeline integration | ⏳ |
 
-### Week 1 – Real World Datasets
+### Week 1 — Real-World Datasets
 
-| Day | Dataset | Status |
-|-----|---------|--------|
-| Day 1 | TBD | ⏳ Upcoming |
-| Day 2 | Olist + BFSI | ⏳ Upcoming |
-| Day 3 | Olist + BFSI | ⏳ Upcoming |
-| Day 4 | Olist + BFSI | ⏳ Upcoming |
-| Day 5 | Olist + BFSI | ⏳ Upcoming |
-
-### Week 2 ⏳ Upcoming
-### Week 3 ⏳ Upcoming
-### Mini Project ⏳ Upcoming
+| Day | Datasets | Focus | Status |
+|-----|----------|-------|--------|
+| Day 1 | TBD | Orientation | ⏳ |
+| Day 2–5 | **Olist** (Brazilian e-commerce) + **BFSI** | Domain-specific pipelines | ⏳ |
 
 ---
 
-## 🔍 Phase Summaries
+## 🔍 Phase Deep Dives
 
 ---
 
-### 🔵 Phase 1 – Filtering and Selection
+### Phase 1 · Filtering & Selection
 
-Built confidence with basic SQL queries and PySpark DataFrame operations using a simple customers dataset.
+The SQL → PySpark mental model — the foundation everything else builds on.
 
-**SQL ↔ PySpark mental model established:**
-
-| SQL | PySpark Equivalent |
-|-----|-------------------|
-| `SELECT col` | `df.select("col")` |
-| `WHERE age > 25` | `df.filter(df.age > 25)` |
-| `GROUP BY city` | `df.groupBy("city").count()` |
-| `ORDER BY spend DESC` | `df.orderBy(df.spend.desc())` |
-| `JOIN ON id` | `df.join(df2, "customer_id")` |
-
-**Exercises:** Show all customers · Filter by city · Filter by age · Select columns · Count by city
+| SQL | PySpark | What it does |
+|-----|---------|--------------|
+| `SELECT col` | `df.select("col")` | Pick columns |
+| `WHERE age > 25` | `df.filter(df.age > 25)` | Row-level filtering |
+| `GROUP BY city` | `df.groupBy("city").count()` | Aggregation |
+| `ORDER BY spend DESC` | `df.orderBy(df.spend.desc())` | Sorting |
+| `LEFT JOIN ON id` | `df.join(df2, "id", "left")` | Table joining |
 
 ---
 
-### 🟢 Phase 2 – Joins and Aggregations
+### Phase 2 · Joins & Aggregations
 
-Bridged the gap between basic syntax and real-world data engineering tasks. Worked with SparkPlayground sample CSV files, performed light data cleaning and solved realistic join and aggregation exercises.
+First time working with real CSV files off disk. Introduced the rule that changed everything:
 
-**Critical pattern introduced — always clean before joining:**
 ```python
+# ❌ WRONG — join first, discover broken keys mid-pipeline
+joined = customers.join(orders, "customer_id")
+
+# ✅ RIGHT — clean both sides BEFORE the join
 customers = customers.dropna(subset=["customer_id"])
 orders    = orders.dropna(subset=["customer_id"])
 joined    = customers.join(orders, "customer_id", "inner")
 ```
 
-**Exercises:** Total spend per customer · Top 3 customers · Customers with no orders · City revenue · Avg order amount · Repeat customers · Sort by spend
+---
+
+### Phase 3 · ETL Pipeline
+
+Stopped writing isolated queries. Started thinking in pipelines.
+
+```
+┌──────────┐     ┌───────────────────────────────┐     ┌──────────┐
+│ EXTRACT  │────▶│          TRANSFORM             │────▶│   LOAD   │
+│          │     │                                │     │          │
+│ Read CSV │     │  Clean → Filter → Join →       │     │ Save CSV │
+│ Read JSON│     │  Aggregate → Validate          │     │ display()│
+│ Read PAR │     │                                │     │          │
+└──────────┘     └───────────────────────────────┘     └──────────┘
+```
+
+**Non-negotiable order of operations:**
+
+```
+1.  dropna()          — kill null keys first
+2.  dropDuplicates()  — before any count-based logic
+3.  cast()            — fix types right after reading
+4.  filter()          — narrow scope before joining
+5.  join()            — only on clean data
+6.  groupBy().agg()   — aggregate last
+7.  validate          — row counts before and after every step
+```
 
 ---
 
-### 🟡 Phase 3 – ETL Pipeline
+### Phase 3A · Data Quality & Cleaning
 
-Moved from isolated queries to thinking like a data engineer. Built a structured ETL pipeline covering ingestion from CSV, JSON, and Parquet formats.
+Given intentionally broken data. Had to find every issue, fix it, and prove the fix worked with row counts.
 
-**The ETL mental model:**
-```
-EXTRACT          TRANSFORM                          LOAD
-  │                   │                               │
-Read CSV  →  Clean nulls  →  Filter invalids  →  Save output
-              Drop dupes      Join tables
-              Cast types      Aggregate
-                              Validate
-```
+| # | Issue | Why It's Dangerous | Fix Applied |
+|---|-------|-------------------|-------------|
+| 1 | Null `customer_id` | Uncatchable join failures downstream | `dropna(subset=["customer_id"])` |
+| 2 | Null `city` | Silent wrong groupBy counts | `fillna({"city": "Unknown"})` |
+| 3 | Duplicate row | Every aggregate is double-counted | `dropDuplicates()` |
+| 4 | Age = -5 | Corrupts averages, breaks age filters | `filter(df.age > 0)` |
 
-**Order of operations (non-negotiable):**
-```
-✅ Clean   BEFORE  Join
-✅ Filter  BEFORE  Aggregate
-✅ Validate BEFORE  Process
-```
+**Before → After:** 6 rows → 4 rows. Every remaining row is trustworthy.
 
 ---
 
-### 🔴 Phase 3A – Data Quality & Cleaning
+### Phase 4 · Business Pipeline & Analytics
 
-Worked with intentionally messy data — nulls, duplicates, invalid values. Validated results using before/after row counts.
+Built the most complete pipeline so far. Seven tasks, all feeding one final reporting table.
 
-**Issues found and fixed:**
-
-| Issue | Impact | Fix |
-|-------|--------|-----|
-| Null `customer_id` | Can't join — row is useless | `dropna(subset=["customer_id"])` |
-| Null `city` | Wrong city-wise counts | `fillna({"city": "Unknown"})` |
-| Duplicate rows | Double-counted in aggregations | `dropDuplicates()` |
-| Invalid age (-5) | Corrupts averages and filters | `filter(df.age > 0)` |
-
-**Result:** From 6 dirty rows → 4 clean, trustworthy rows.
-
----
-
-### 🟠 Phase 4 – Business Pipeline & Analytics
-
-Built a complete end-to-end business pipeline. All 7 tasks feed into a single final reporting table.
-
-**Pipeline architecture:**
 ```
-Raw CSV files
-     │
-     ▼
- Data Cleaning  ──────────────────────────────────────────┐
-     │                                                      │
-     ├──▶ Task 1: Daily Sales       (date, total_sales)     │
-     ├──▶ Task 2: City Revenue      (city, total_revenue)   │
-     ├──▶ Task 3: Top 5 Customers   (name, total_spend)     │
-     ├──▶ Task 4: Repeat Customers  (id, order_count)       │
-     ├──▶ Task 5: Segmentation      (name, spend, segment)  │
-     │                                                      │
-     └──▶ Task 6: Final Report ◀────────────────────────────┘
-                    │
-                    ▼
-           Task 7: Save as CSV
+                        ┌─────────────────────┐
+      Raw CSV ──────────▶   Clean & Validate   │
+                        └──────────┬──────────┘
+                                   │
+              ┌────────────────────┼────────────────────┐
+              │                    │                    │
+              ▼                    ▼                    ▼
+       Daily Sales           City Revenue         Top 5 Customers
+              │                    │                    │
+              └────────────────────┼────────────────────┘
+                                   │
+              ┌────────────────────┼────────────────────┐
+              │                                         │
+              ▼                                         ▼
+      Repeat Customers                        Segmentation
+      (order_count > 1)                  (Gold / Silver / Bronze)
+              │                                         │
+              └─────────────────┬───────────────────────┘
+                                │
+                                ▼
+                      ┌─────────────────┐
+                      │  Final Report   │──▶ Save as CSV
+                      └─────────────────┘
 ```
 
-**Customer segmentation logic:**
+**Segmentation thresholds:**
 ```python
 df = df.withColumn("segment",
-    when(df.total_spend > 10000, "Gold")
-    .when((df.total_spend >= 5000) & (df.total_spend <= 10000), "Silver")
-    .otherwise("Bronze")
+    when(df.total_spend > 10000,                               "Gold")
+   .when((df.total_spend >= 5000) & (df.total_spend <= 10000), "Silver")
+   .otherwise(                                                 "Bronze")
 )
 ```
 
 ---
 
-### 🟤 Phase 4A – Bucketing & Segmentation
+### Phase 4A · Bucketing & Segmentation — Three Methods Compared
 
-Explored multiple ways to convert continuous numerical data into categories — and understood when to use each.
+Same goal, three different tools. Knowing *which* to reach for is the real skill.
 
-**Method 1 — Conditional Logic (most common in production):**
+| Method | How It Works | Best For | Watch Out |
+|--------|-------------|----------|-----------|
+| `F.when()` | Fixed business thresholds | Known, stable cutoffs | Breaks if data shifts |
+| `Bucketizer` | MLlib split boundaries | ML pipeline integration | Requires `DoubleType` input |
+| `approxQuantile` | Thresholds derived from data | Seasonal / drifting data | Balanced buckets, not business-aligned |
+
 ```python
-df = df.withColumn("segment",
-    when(df.total_spend > 10000, "Gold")
-    .when((df.total_spend >= 5000) & (df.total_spend <= 10000), "Silver")
-    .otherwise("Bronze")
+# Method 3 — let the data tell you where the thresholds should be
+quantiles      = df.approxQuantile("total_spend", [0.33, 0.66], 0)
+low_threshold  = quantiles[0]   # bottom 33% cutoff
+high_threshold = quantiles[1]   # top 33% cutoff
+
+df = df.withColumn("tier",
+    when(df.total_spend >= high_threshold, "Top Tier")
+   .when(df.total_spend >= low_threshold,  "Mid Tier")
+   .otherwise(                             "Low Tier")
 )
 ```
 
-**Method 2 — MLlib Bucketizer (ML pipelines):**
-```python
-from pyspark.ml.feature import Bucketizer
-splits = [-float("inf"), 5000, 10000, float("inf")]
-bucketizer = Bucketizer(splits=splits, inputCol="total_spend", outputCol="bucket")
-df = bucketizer.transform(df)
-```
-
-**Method 3 — Quantile-based (adaptive, handles data drift):**
-```python
-quantiles = df.approxQuantile("total_spend", [0.33, 0.66], 0)
-low, high  = quantiles[0], quantiles[1]
-df = df.withColumn("segment",
-    when(df.total_spend >= high, "Gold")
-    .when(df.total_spend >= low,  "Silver")
-    .otherwise("Bronze")
-)
-```
-
-**When to use which:**
-
-| Method | Use When |
-|--------|----------|
-| `when()` conditional | Business rules have fixed, meaningful thresholds |
-| SQL CASE | Working in SparkSQL / notebook environments |
-| `Bucketizer` | Part of an MLlib ML pipeline |
-| `approxQuantile` | Distribution changes over time (seasonal data, growth) |
-
-> ⚠️ **Fixed thresholds fail** when data distribution shifts — e.g. during a sale season everyone crosses ₹10,000 and your Bronze bucket empties out. Use quantile-based segmentation when balance matters more than absolute values.
+> **The insight:** Fixed thresholds are business logic. Quantile thresholds are data logic. Use fixed when the *number* matters. Use quantile when *balance* matters.
 
 ---
 
-## 🧠 Key Concepts Summary
+## 🧠 Concepts That Actually Stuck
 
-### Window Functions — when and why
+### Window Functions — compute across rows without collapsing them
 
-Window functions let you compute values *across related rows* without collapsing the dataset like `groupBy` does.
+`groupBy` collapses your dataset. Window functions don't.
 
-| Function | Behaviour | Example Use |
-|----------|-----------|-------------|
-| `ROW_NUMBER()` | Always unique, no ties | Pagination |
-| `RANK()` | Ties share rank, next rank skips | Top-N with gaps |
-| `DENSE_RANK()` | Ties share rank, no gap | Top-N per category |
-| `SUM() OVER` | Running / cumulative total | Revenue tracking |
-| `LAG() / LEAD()` | Previous / next row value | Period-over-period comparison |
+| Function | Behaviour | Real Use Case |
+|----------|-----------|---------------|
+| `ROW_NUMBER()` | Unique rank, no ties ever | Paginating results |
+| `RANK()` | Ties get same rank, next rank jumps | Leaderboards with gaps |
+| `DENSE_RANK()` | Ties get same rank, no gap | Top-N per category |
+| `SUM() OVER (ORDER BY date)` | Running cumulative total | Revenue trend tracking |
+| `LAG(col, 1)` | Value from the previous row | Month-over-month comparison |
 
-> ⚠️ **SparkPlayground limitation:** Window functions are not supported. Use `groupBy max + join` approach instead.
+> ⚠️ **SparkPlayground doesn't support Window.** Use `groupBy().agg(max()) + join()` as the workaround.
 
-### Fact vs Dimension Tables
+---
+
+### Fact vs Dimension — the schema thinking that separates DE from DA
 
 | | Fact Table | Dimension Table |
 |--|-----------|-----------------|
-| **Contains** | Transactions / events | Descriptive attributes |
-| **Keys** | Foreign keys | Primary keys |
-| **Size** | Large, grows constantly | Small, relatively stable |
-| **Examples** | `orders`, `sales`, `payments` | `customers`, `products`, `cities` |
+| **Stores** | Events / transactions | Context / attributes |
+| **Key type** | Foreign keys | Primary key |
+| **Size** | Huge, grows every day | Small, rarely changes |
+| **Changes** | Append-only | Slow-changing |
+| **Examples** | `orders`, `payments`, `clicks` | `customers`, `products`, `cities` |
 
-### ETL Order of Operations
-
-```
-1. EXTRACT    → Read raw data
-2. CLEAN      → Remove nulls, dupes, invalid values
-3. FILTER     → Remove out-of-scope records
-4. JOIN       → Combine related tables (after cleaning!)
-5. AGGREGATE  → Group and summarise
-6. VALIDATE   → Check counts and business rules
-7. LOAD       → Write final output
-```
+**Rule of thumb:** If a row represents *something that happened*, it's a fact. If it represents *something that exists*, it's a dimension.
 
 ---
 
-## 📌 Repository Standards
+### Data Quality Checklist — run this before every pipeline
 
-Each phase folder contains:
-- `README.md` — detailed documentation with objective, approach, learnings and challenges (8 sections)
-- `solution.py` — PySpark implementation with inline comments and ETL section dividers
-- `queries.sql` — SQL implementation with inline comments
-- `phaseX_problem_statement.pdf` — original problem statement
-- `Outputs/` — screenshots of query results
-
-**Commit message format:**
 ```
-Week0 PhaseX: <clear description of what was done>
+□  Check null counts on key join columns          (dropna)
+□  Check for duplicate primary keys               (dropDuplicates)
+□  Check numeric columns loaded as strings        (cast after read)
+□  Check for invalid values (negatives, blanks)   (filter)
+□  Validate row count before vs after cleaning    (df.count())
+□  Check join result count makes sense            (not fewer than expected)
 ```
 
 ---
 
-## ⚠️ Known Platform Limitations
+## ⚠️ Platform Gotchas (Learned the Hard Way)
 
-| Platform | Limitation | Workaround |
-|----------|-----------|------------|
-| SparkPlayground | No `Window` function support | Use `groupBy max + join` approach |
-| SparkPlayground | `createDataFrame()` fails for large data | Use `/samples/` CSV files instead |
-| SparkPlayground | `.show()` not supported | Use `display()` |
-| DB Fiddle MySQL | No `RANK() OVER (PARTITION BY)` | Use subquery with `HAVING` |
-| SparkPlayground | Small CSV data (max ~$120 totals) | Adjust segmentation thresholds accordingly |
-
----
-
-## 🛠️ Tools & Technologies
-
-| Tool | Purpose |
-|------|---------|
-| **Python 3.12** | Primary programming language |
-| **PySpark 3.5.1** | Distributed data processing |
-| **SQL (MySQL)** | Data querying and transformation |
-| **Apache Spark / Databricks** | Big data processing platform |
-| **SparkPlayground** | Online PySpark compiler |
-| **DB Fiddle** | Online SQL compiler (MySQL) |
-| **Git & GitHub** | Version control and code management |
+| Platform | What Breaks | What Actually Works |
+|----------|-------------|---------------------|
+| SparkPlayground | `Window` import — silent failure | `groupBy max + join` pattern |
+| SparkPlayground | `spark.createDataFrame()` on large lists | Use `/samples/` CSV files |
+| SparkPlayground | `.show()` | `display()` |
+| SparkPlayground | Sample data max ~$120 total amounts | Adjust Gold/Silver/Bronze thresholds |
+| DB Fiddle MySQL | `RANK() OVER (PARTITION BY ...)` | Subquery with `GROUP BY` + `HAVING` |
 
 ---
 
-## 📈 Key Learnings So Far
+## 🛠️ Tech Stack
 
-- How SQL concepts map directly to PySpark DataFrame operations
-- Importance of cleaning data **before** joining or aggregating
-- How to build a structured ETL pipeline — Extract → Transform → Load
-- Multiple ways to implement bucketing and segmentation in PySpark
-- Real-world data is always messy — cleaning is not optional
-- Order of operations matters: clean → filter → join → aggregate
-- Fixed segmentation thresholds break when data distribution shifts — quantile-based is more robust
-- Window functions are powerful but platform-dependent — always have a fallback
+<div align="center">
+
+| Layer | Tool | Version | Purpose |
+|-------|------|---------|---------|
+| Language | Python | 3.12 | Primary |
+| Processing | PySpark | 3.5.1 | Distributed compute |
+| SQL | MySQL via DB Fiddle | — | Query practice |
+| Cloud Platform | Databricks Community | — | Notebook environment |
+| Local Compiler | SparkPlayground | — | Online PySpark |
+| Version Control | Git + GitHub | — | Code management |
+
+</div>
+
+---
+
+## 📈 What I Actually Learned
+
+Not a copy of the phase objectives — what genuinely changed in how I think:
+
+- **SQL and PySpark are the same idea, different syntax.** Once I built the mapping table mentally, switching between them became automatic.
+- **Cleaning is not a step — it's a philosophy.** You clean constantly: after reading, before joining, after joining, before aggregating.
+- **Row counts are your best debugging tool.** If the count doesn't make sense, something upstream is broken.
+- **Fixed thresholds are a liability.** They're right today and wrong next month. Quantile-based segmentation ages better.
+- **Window functions are powerful but platform-fragile.** Always know your fallback before you need it.
+- **ETL isn't a sequence of steps — it's a way of thinking.** Every transformation should have a clear *why* before the *how*.
 
 ---
 
-## 👤 About Me
+<div align="center">
 
-**Name:** Dwibhashyam Amarnath Sharma
-**Roll Number:** 22PA1A1240
-**Program:** Capgemini Data Engineering Training
-**GitHub:** [Amar-1240](https://github.com/Amar-1240)
+## 👤 Dwibhashyam Amarnath Sharma
 
----
+**22PA1A1240 · Capgemini Data Engineering Training · 2026**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Amar--1240-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Amar-1240)
+
+<br/>
 
 *Built phase by phase. Every line of code here was written to understand, not to copy.*
+
+</div>
