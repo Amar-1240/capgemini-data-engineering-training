@@ -5,13 +5,7 @@ Each week is divided into phases covering different data engineering concepts us
 
 ---
 
-## 👤 About Me
-**Name:** Dwibhashyam Amarnath Sharma
-**Roll Number:** 22PA1A1240
-**Program:** Capgemini Data Engineering Training
-**GitHub:** [Amar-1240](https://github.com/Amar-1240)
 
----
 
 ## 📁 Repository Structure
 
@@ -140,3 +134,11 @@ Week0 PhaseX: <clear description of what was done>
 - Multiple ways to implement bucketing and segmentation in PySpark
 - Real-world data is always messy — cleaning is not optional
 - Order of operations matters: clean → filter → join → aggregate
+
+- ## 👤 About Me
+**Name:** Dwibhashyam Amarnath Sharma
+**Roll Number:** 22PA1A1240
+**Program:** Capgemini Data Engineering Training
+**GitHub:** [Amar-1240](https://github.com/Amar-1240)
+
+---
