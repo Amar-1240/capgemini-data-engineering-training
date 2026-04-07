@@ -8,7 +8,7 @@ The objective of this phase is to work with a real-world multi-table dataset usi
 
 ## 🛠️ Tools & Technologies
 
-* Databricks Community Edition
+* Databricks Free Edition
 * PySpark (DataFrame API)
 * Databricks SQL Editor
 * Olist Brazilian E-commerce Dataset (Kaggle)
