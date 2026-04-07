@@ -19,7 +19,7 @@ capgemini-data-engineering-training/
 │   ├── phase3A/                   → Data Quality & Cleaning
 │   ├── phase4/                    → Business Pipeline & Analytics
 │   ├── phase4A/                   → Bucketing & Segmentation
-│   ├── phase5/                    → Advanced Transformations (Pending)
+│   ├── phase5/                    → Databricks + Olist Pipeline
 │   └── phase6/                    → Capstone Pipeline (Pending)
 │
 ├── week1/                         → Real-world datasets practice
@@ -39,12 +39,11 @@ capgemini-data-engineering-training/
 
 Each phase folder contains:
 
-* solution.py (PySpark implementation)
+* solution.py / solution.ipynb (PySpark implementation)
 * queries.sql (SQL queries)
 * phaseX_problem_statement.pdf
 * Outputs/ (screenshots)
 * README.md
-
 
 
 ---
@@ -341,6 +340,106 @@ To understand different methods of segmentation.
 * outputs/
 
 ---
+### 🔹 Phase 5 – Databricks + Olist End-to-End Pipeline
+
+**Objective**
+To work with a real-world multi-table dataset using Databricks and build a complete data engineering pipeline with both PySpark and SQL.
+
+---
+
+**Problem Summary**
+
+* Use Olist Brazilian E-commerce dataset
+* Perform multi-table joins
+* Apply advanced analytics using window functions
+* Generate a final reporting dataset
+
+---
+
+**Approach**
+
+1. **Data Ingestion**
+
+   * Uploaded dataset into Databricks storage
+   * Loaded CSV files using PySpark
+
+2. **Data Cleaning**
+
+   * Removed null values from key columns
+   * Converted price column to numeric
+   * Ensured valid join keys
+
+3. **Data Modeling**
+
+   * Treated `order_items` as fact table
+   * Joined with:
+
+     * orders → customer_id
+     * customers → city
+     * products → category
+   * Converted category names to English
+   * Handled missing categories
+
+4. **Analytics (PySpark + SQL)**
+
+   * Top customers per city (window functions)
+   * Running total of sales
+   * Top products per category (DENSE_RANK)
+   * Customer Lifetime Value (CLV)
+   * Customer segmentation (Gold/Silver/Bronze)
+
+5. **Final Reporting**
+
+   * Created final dataset with:
+
+     * customer_id
+     * city
+     * total_spend
+     * segment
+     * total_orders
+
+---
+
+**Key Transformations Used**
+
+* join()
+* groupBy()
+* agg()
+* window functions (rank, dense_rank)
+* when()
+* countDistinct()
+
+---
+
+**Output / Results**
+
+* Top customers per city
+* Running sales trend
+* Product performance by category
+* Customer segmentation
+* Final reporting table
+
+---
+
+**Challenges Faced**
+
+* File path confusion (FileStore vs Volumes)
+* Handling null values and missing categories
+* Debugging joins and aggregation issues
+* Managing SQL vs PySpark environments
+
+---
+
+**Learnings**
+
+* Working with real-world multi-table datasets
+* Importance of data validation at each step
+* Difference between DataFrame API and SQL execution
+* Use of window functions in analytics
+* End-to-end pipeline building
+
+---
+
 
 ## 👤 Author
 
@@ -349,3 +448,5 @@ Dwibhashyam Amarnath Sharma
 22PA1A1240
 
 Capgemini Data Engineering Trainee
+
+
