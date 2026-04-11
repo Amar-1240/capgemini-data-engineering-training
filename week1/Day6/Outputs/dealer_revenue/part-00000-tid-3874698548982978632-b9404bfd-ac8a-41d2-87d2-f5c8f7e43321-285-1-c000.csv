@@ -1,0 +1,11 @@
+dealer_id,dealer_name,dealer_city,total_revenue,total_sales,total_units
+2,Dealer2,Chennai,721442,8,21
+9,Dealer9,Chennai,375896,6,14
+6,Dealer6,Bangalore,342321,4,11
+1,Dealer1,Hyderabad,320321,8,11
+5,Dealer5,Bangalore,290639,7,14
+7,Dealer7,Hyderabad,267090,6,12
+4,Dealer4,Mumbai,220420,8,15
+10,Dealer10,Chennai,218183,6,12
+8,Dealer8,Mumbai,87418,5,8
+3,Dealer3,Mumbai,81563,5,8

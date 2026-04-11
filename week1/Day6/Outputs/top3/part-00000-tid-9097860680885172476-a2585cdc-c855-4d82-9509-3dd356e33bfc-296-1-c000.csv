@@ -1,0 +1,13 @@
+customer_id,name,city,total_revenue,total_sales,total_units,rnk
+37,Cust37,Bangalore,135511,2,4,1
+5,Cust5,Bangalore,126977,2,3,2
+12,Cust12,Bangalore,65964,1,3,3
+13,Cust13,Chennai,230502,5,11,1
+17,Cust17,Chennai,220322,3,7,2
+34,Cust34,Chennai,213216,2,5,3
+24,Cust24,Hyderabad,233449,3,7,1
+23,Cust23,Hyderabad,147509,3,6,2
+50,Cust50,Hyderabad,144497,2,5,3
+41,Cust41,Mumbai,154246,2,4,1
+4,Cust4,Mumbai,133266,2,4,2
+42,Cust42,Mumbai,99363,1,3,3
