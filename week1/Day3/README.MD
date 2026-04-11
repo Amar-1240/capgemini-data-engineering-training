@@ -1,93 +1,129 @@
-# 📊 Week 1 – Day 3 (SQL: CASE Statements & Window Functions)
+# 📊 Week 1 – Day 3 (SQL: Advanced CASE Logic, Data Manipulation & Window Functions)
 
 ## **Objective**
-To develop advanced SQL problem-solving skills using **CASE statements (including nested CASE)** and **Window Functions** for conditional logic, ranking, and analytical computations on structured datasets.
+
+To develop advanced SQL problem-solving skills using:
+
+* Complex CASE WHEN logic (including multi-level and real-world scenarios)
+* Data transformation using string, numeric, and date functions
+* Window functions for ranking and analytical computations
 
 ---
 
 ## **Problem Summary**
 
-Day 3 focuses on two major areas:
+Day 3 focuses on three major areas:
 
-- **CASE WHEN & Nested CASE Logic**
-- **Window Functions (ROW_NUMBER, RANK, DENSE_RANK)**
+* **Advanced CASE WHEN Logic (Assignment 2 – CustomerUsage)**
+* **Data Manipulation (Assignment_StrDataNum)**
+* **Window Functions (ROW_NUMBER, RANK, DENSE_RANK)**
 
 The datasets used include:
-- Employee dataset with salary, experience, department, and performance rating  
-- Employees and orders datasets for ranking and analytical operations  
 
-The goal is to:
-- Apply conditional transformations using CASE  
-- Implement business logic directly in SQL  
-- Perform ranking and ordering using window functions  
-- Handle real-world decision-based scenarios  
+* CustomerUsage dataset for business decision logic 
+* Multiple structured datasets for transformation problems (salary, orders, subscriptions, etc.) 
+* Employees dataset for ranking and analytical operations 
 
 ---
 
 ## **Approach**
 
 ### **1. Data Setup**
-- Created tables:
-  - `Employee`
-  - `employees`, `orders`
-- Inserted structured sample data before applying transformations and queries  
+
+* Created multiple tables:
+
+  * `CustomerUsage`
+  * Data manipulation tables (salary, orders, subscriptions, etc.)
+  * `employees`
+* Inserted structured sample data before applying queries and transformations
 
 ---
 
-### **2. CASE WHEN Implementation**
+### **2. Advanced CASE WHEN Logic (Assignment 2)**
 
-Solved multiple problems involving conditional logic:
+Solved business-oriented problems using structured decision logic:
 
-#### 🔹 Basic CASE Conditions
-- Salary hike based on experience and performance  
-- Bonus calculation using department + performance  
-- Employee categorization (High, Mid, Low performers)  
+#### 🔹 Customer Behavior Analysis
 
-#### 🔹 Conditional Logic Design
-- Multi-condition filtering using AND / OR  
-- Business-rule-based classification  
+* Plan upgrade suggestions
+* Usage classification (heavy, moderate, light users)
+* Voice vs data preference
 
-#### 🔹 Nested CASE Statements
-Handled complex scenarios like:
-- Salary hike based on performance + salary + experience  
-- Bonus calculation using multiple layered conditions  
-- Promotion eligibility logic  
-- Tax bracket classification  
+#### 🔹 Business Decision Logic
+
+* Offer eligibility and discounts
+* Reward tier classification
+* Plan mismatch detection
+
+#### 🔹 Multi-Condition CASE Logic
+
+* Nested conditions using AND / OR
+* Priority-based evaluation
+* Real-world telecom scenarios
 
 ---
 
-### **3. Window Functions Implementation**
+### **3. Data Manipulation (Assignment_StrDataNum)**
 
-Solved analytical problems using:
+Solved complex transformation problems combining multiple SQL concepts:
+
+#### 🔹 String, Number & Date Functions
+
+* Name formatting (UPPER, LOWER, CONCAT)
+* Mathematical operations (ROUND, MOD, POWER, ABS)
+* Date calculations (DATEDIFF, TIMESTAMPDIFF, MONTHNAME)
+
+#### 🔹 Multi-Concept Queries
+
+* Salary and bonus calculations
+* Subscription validation and duration analysis
+* Order delay and delivery tracking
+
+#### 🔹 Real-World Logic Problems
+
+* Risk classification (loan, salary, tax)
+* Fraud detection scenarios
+* Attendance and performance evaluation
+* Financial and behavioral analysis
+
+---
+
+### **4. Window Functions Implementation**
+
+Implemented analytical queries using:
 
 #### 🔹 ROW_NUMBER()
-- Assigning unique sequence to rows  
-- Department-wise row numbering  
-- Sorting based on salary and dates  
+
+* Unique row assignment
+* Department-wise ranking
+* Sorting based on salary and joining date
 
 #### 🔹 RANK()
-- Ranking employees based on salary  
-- Department-wise ranking  
-- Handling ties with gaps in ranking  
+
+* Ranking with gaps
+* Salary-based ranking
+* Department-level comparisons
 
 #### 🔹 DENSE_RANK()
-- Ranking without gaps  
-- Comparing ranking behavior with RANK()  
+
+* Ranking without gaps
+* Clean ranking for analytical insights
 
 #### 🔹 Partitioning Concepts
-- Using `PARTITION BY` for grouped analysis  
-- Performing intra-group comparisons  
+
+* Group-based calculations using `PARTITION BY`
+* Comparing data within categories
 
 ---
 
 ## **Key Concepts Covered**
 
-- CASE WHEN and nested CASE logic  
-- Conditional transformations in SQL  
-- Window functions (ROW_NUMBER, RANK, DENSE_RANK)  
-- Partitioning and ordering  
-- Analytical vs aggregation functions  
-- Implementing business rules in queries  
+* Advanced CASE WHEN and nested logic
+* Data transformation using multiple SQL functions
+* Window functions (ROW_NUMBER, RANK, DENSE_RANK)
+* Partitioning and ordering
+* Combining multiple SQL concepts in a single query
+* Implementing real-world business rules
 
 ---
 
@@ -95,47 +131,55 @@ Solved analytical problems using:
 
 Day3/
 │
-├── Assignment_1.docx → CASE WHEN problem statements  
-├── Assignment_1.sql → Solutions for CASE problems  
+├── Assignment_2.docx → Advanced CASE WHEN problems (CustomerUsage)
+├── Assignment_2.sql → Solutions
 │
-├── WFunctions1.docx → Window function problem statements  
-├── WFunctions1.sql → Solutions for window function queries  
+├── Assignment_StrDataNum.docx → Data manipulation problems
+├── Assignment_StrDataNum.sql → Solutions
 │
-└── README.md  
+├── WFunctions1.docx → Window function problems
+├── WFunctions1.sql → Solutions
+│
+└── README.md
 
 ---
 
 ## **Output / Results**
 
-- Salary hike and bonus calculations  
-- Employee performance categorization  
-- Risk and eligibility classification  
-- Ranked employee datasets  
-- Department-wise analytical insights  
-- Ordered and partitioned result sets  
+* Customer usage and business insights
+* Advanced classification and decision-based outputs
+* Data transformation results combining multiple functions
+* Ranked and partitioned datasets
+* Analytical insights using window functions
 
 ---
 
 ## **Challenges Faced**
 
-- Writing complex nested CASE conditions without logical errors  
-- Managing multiple conditions cleanly  
-- Understanding ranking differences (ROW_NUMBER vs RANK vs DENSE_RANK)  
-- Applying correct partitioning logic  
-- Avoiding incorrect ordering in window functions  
+* Handling complex multi-condition CASE logic
+* Combining multiple functions in a single query
+* Avoiding logical conflicts in nested CASE statements
+* Understanding ranking differences in window functions
+* Managing query readability with increasing complexity
 
 ---
 
 ## **Learnings**
 
-- CASE statements are powerful for embedding business logic in SQL  
-- Nested CASE helps solve real-world multi-condition problems  
-- Window functions enable advanced analytics beyond GROUP BY  
-- Proper partitioning is critical for accurate results  
-- Analytical thinking is required, not just syntax knowledge  
+* CASE statements can model real-world business decisions
+* Combining functions is key to solving complex SQL problems
+* Window functions provide powerful analytical capabilities
+* Logical structuring matters more than syntax
+* Real SQL problems require combining multiple concepts
 
 ---
 
 ## **Conclusion**
 
-Day 3 focused on applying conditional logic and analytical functions to simulate real-world business scenarios. It strengthened the ability to design smarter SQL queries that go beyond basic aggregation and joins, moving closer to real data engineering problem-solving.
+Day 3 moved beyond basic SQL into real-world problem-solving by combining:
+
+* Advanced conditional logic
+* Data transformation techniques
+* Analytical functions
+
+It strengthened the ability to write complex, structured queries similar to real data engineering scenarios.
