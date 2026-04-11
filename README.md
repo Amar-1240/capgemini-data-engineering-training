@@ -25,10 +25,10 @@ capgemini-data-engineering-training/
 │
 ├── week1/                            → Real-world datasets practice
 │   ├── Day1/                         → PySpark data cleaning (customers & orders)
-│   ├── Day2/                         → SQL GROUP BY & JOINS practice
-│   ├── Day3/                         → CASE statements & Window Functions
-│   ├── Day4/                         → Advanced SQL (student submission analysis pipeline)
-│   ├── Day5/                         → Upcoming work
+│   ├── Day2/                         → SQL CASE, GROUP BY & JOINS
+│   ├── Day3/                         → Advanced SQL (CASE, Functions, Window)
+│   ├── Day4/                         → Advanced SQL pipeline (student submission analysis)
+│   ├── Day5/                         → NULL Functions & REGEX
 │
 ├── week2/                            → Upcoming work
 └── week3/                            → Upcoming work
@@ -98,82 +98,75 @@ To apply SQL and PySpark concepts on real-world datasets, focusing on data clean
 
 ---
 
-## **Day 1 – Data Cleaning with PySpark**
+## **Summary**
 
-- Cleaned customer and orders datasets
-- Handled null and “blank” values
-- Standardized columns (e.g., country formatting)
-- Removed duplicates and invalid records
-- Generated cleaned output datasets
-
----
-
-## **Day 2 – SQL: GROUP BY & JOINS**
-
-- Solved 30+ GROUP BY problems (Assignment 3)
-- Implemented aggregations: SUM, COUNT, AVG, MIN, MAX
-- Applied HAVING vs WHERE conditions
-- Practiced joins (INNER, LEFT, RIGHT, FULL)
-- Solved real-world relational problems
+* Worked with real-world messy datasets (customers, orders, student submissions, usage data)
+* Handled null values, duplicates, invalid records, and inconsistent formats
+* Applied CASE logic for business decision-making
+* Performed aggregations and joins across multiple datasets
+* Used window functions for ranking and duplicate detection
+* Implemented NULL handling and REGEX for data cleaning
+* Built structured SQL-based data analysis workflows
 
 ---
 
-## **Day 3 – SQL: CASE & Window Functions**
+## **Key Concepts Covered**
 
-- Implemented CASE and nested CASE logic
-- Solved business-rule-based problems
-- Applied window functions:
-  - ROW_NUMBER
-  - RANK
-  - DENSE_RANK
-- Performed partition-based analysis and ranking
-
----
-
-## **Day 4 – Advanced SQL Assignment**
-
-- Worked with real-world messy datasets (students + responses)
-- Performed data cleaning and column normalization
-- Handled inconsistent timestamp formats
-- Built unified email mapping (college + personal)
-- Merged datasets using FULL OUTER JOIN and COALESCE
-- Removed redundant and duplicate records
-- Applied window functions for duplicate detection
-- Generated final classification:
-  - Submitted
-  - Duplicate
-  - Not Submitted
-  - Invalid
+* Data cleaning and preprocessing
+* CASE WHEN and nested logic
+* GROUP BY and aggregation functions
+* Joins (inner, left, right, full outer)
+* Window functions (ROW_NUMBER, RANK, DENSE_RANK)
+* NULL handling (ISNULL, COALESCE, NULLIF)
+* REGEX for pattern matching and text extraction
+* Handling inconsistent and real-world datasets
+* Analytical SQL problem-solving
 
 ---
 
-## **Key Concepts Covered in Week 1**
+## **Technologies Used**
 
-- Data cleaning and preprocessing on real datasets
-- Advanced SQL joins and analysis
-- CASE statements and conditional logic
-- Window functions for analytics
-- Handling inconsistent and messy real-world data
-- Building structured data pipelines
+### SQL
 
----
+* CASE statements
+* Joins and aggregations
+* Window functions
+* NULL handling functions
+* REGEX functions
 
-## **Challenges Faced**
+### PySpark
 
-- Handling inconsistent column names and formats
-- Managing multiple timestamp formats
-- Debugging joins and incorrect mappings
-- Dealing with real-world messy data instead of clean datasets
+* DataFrame transformations
+* Data cleaning and preprocessing
+* Filtering, deduplication, and validation
 
 ---
 
 ## **Learnings**
 
-- Real-world data requires extensive preprocessing
-- Window functions are powerful for analytical problems
-- Joins must be chosen carefully based on logic
-- Structured pipeline thinking is essential
-- Debugging is part of the process, not an exception
+* Real-world data is messy and requires extensive preprocessing
+* SQL is more about logic and problem-solving than syntax
+* Combining multiple concepts is essential for solving real problems
+* Window functions are critical for analytical tasks
+* NULL handling and REGEX are key for data cleaning
+* Structured thinking improves query design and debugging
+
+---
+
+## **Challenges Faced**
+
+* Handling inconsistent data formats and missing values
+* Writing complex CASE statements with correct priority
+* Choosing appropriate join types based on logic
+* Debugging incorrect outputs in multi-step queries
+* Understanding REGEX patterns and edge cases
+* Managing complexity when combining multiple SQL concepts
+
+---
+
+## **Conclusion**
+
+Week 1 focused on applying SQL and PySpark concepts to real-world datasets. It strengthened the ability to clean, transform, and analyze data using structured approaches. The combination of SQL logic, data cleaning techniques, and analytical thinking forms a strong foundation for real-world data engineering tasks.
 
 ---
 
