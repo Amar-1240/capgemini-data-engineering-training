@@ -79,3 +79,52 @@ From the column mixed_value, extract only the last single character of the value
 SELECT id, mixed_value,
 REGEXP_SUBSTR(mixed_value, '.$') AS last_character
 FROM regex_practice;
+
+/* Q5 */
+SELECT id, REGEXP_SUBSTR(mixed_value, '[0-9]{2}') FROM regex_practice;
+
+/* Q6 */
+SELECT id, REGEXP_SUBSTR(mixed_value, '[0-9]') FROM regex_practice;
+
+/* Q7 */
+SELECT id, REGEXP_SUBSTR(phone, '^[+]?[0-9]+') FROM regex_practice;
+
+/* Q8 */
+SELECT id, REGEXP_SUBSTR(mixed_value, '[a-zA-Z]+([0-9]+)[a-zA-Z]+',1,1,NULL,1)
+FROM regex_practice;
+
+/* Q9 */
+SELECT id, REGEXP_SUBSTR(email, '^[^@]+') FROM regex_practice;
+
+/* Q10 */
+SELECT id, REGEXP_SUBSTR(email, '@(.+)$') FROM regex_practice;
+
+/* Q11 */
+SELECT id, REGEXP_SUBSTR(email, '[^@]+$',1,1) FROM regex_practice;
+
+/* Q12 */
+SELECT id, REGEXP_SUBSTR(email, '[^.]+$') FROM regex_practice;
+
+/* Q13 */
+SELECT id, REGEXP_SUBSTR(mixed_value, '[a-zA-Z]+') FROM regex_practice;
+
+/* Q14 */
+SELECT id, REGEXP_SUBSTR(mixed_value, '[0-9]+') FROM regex_practice;
+
+/* Q15 */
+SELECT id, LEFT(full_text,3) FROM regex_practice;
+
+/* Q16 */
+SELECT id, RIGHT(full_text,2) FROM regex_practice;
+
+/* Q17 */
+SELECT id, REGEXP_SUBSTR(full_text, '[0-9]+') FROM regex_practice;
+
+/* Q18 */
+SELECT id, REGEXP_SUBSTR(full_text, '[0-9]+$') FROM regex_practice;
+
+/* Q19 */
+SELECT id, REGEXP_SUBSTR(full_text, '_(.*?)_',1,1,NULL,1) FROM regex_practice;
+
+/* Q20 */
+SELECT id, REGEXP_SUBSTR(phone, '\\+[0-9]+') FROM regex_practice;
