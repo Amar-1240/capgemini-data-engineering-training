@@ -30,7 +30,9 @@ capgemini-data-engineering-training/
 │   ├── Day4/                         → Advanced SQL pipeline (student submission analysis)
 │   ├── Day5/                         → NULL Functions & REGEX
 │
-├── week2/                            → Upcoming work
+├── week2/                            → Advanced data engineering pipelines
+│   ├── Day1/                         → Insurance data pipeline (cleaning, validation, risk analysis)
+│
 └── week3/                            → Upcoming work
 ```
 
@@ -167,6 +169,78 @@ To apply SQL and PySpark concepts on real-world datasets, focusing on data clean
 ## **Conclusion**
 
 Week 1 focused on applying SQL and PySpark concepts to real-world datasets. It strengthened the ability to clean, transform, and analyze data using structured approaches. The combination of SQL logic, data cleaning techniques, and analytical thinking forms a strong foundation for real-world data engineering tasks.
+
+---
+
+# 📊 Week 2 – Advanced Data Engineering Pipelines
+
+## **Objective**
+
+To build complete end-to-end data pipelines using PySpark on domain-based datasets, focusing on data cleaning, validation, transformations, and analytical insights.
+
+---
+
+## **Summary**
+
+- Worked on insurance domain dataset (customers, policies, claims, agents)
+- Identified and handled real-world data issues:
+  - negative values  
+  - nulls  
+  - inconsistent formats  
+  - invalid relationships  
+- Performed data cleaning and preprocessing  
+- Validated data using anti joins and row checks  
+- Built structured transformations:
+  - customer-level premium and claims  
+  - risk score calculation  
+  - city-wise aggregations  
+- Applied window functions for ranking customers and agents  
+
+---
+
+## **Key Concepts Covered**
+
+- Data pipeline design (step-by-step approach)  
+- Data cleaning and preprocessing  
+- Referential integrity validation  
+- Controlled joins (avoiding duplication)  
+- Aggregations and business metrics  
+- Window functions for ranking and analytics  
+
+---
+
+## **Technologies Used**
+
+### PySpark
+- DataFrame transformations  
+- Joins and aggregations  
+- Window functions  
+- Data validation techniques  
+
+---
+
+## **Learnings**
+
+- Data validation is critical before analysis  
+- Real-world datasets require multiple cleaning steps  
+- Improper joins lead to incorrect aggregations  
+- Pipeline thinking is more important than writing single queries  
+- Window functions enable deeper analytical insights  
+
+---
+
+## **Challenges Faced**
+
+- Handling inconsistent and invalid data  
+- Managing joins without duplication  
+- Validating intermediate outputs  
+- Structuring the pipeline logically  
+
+---
+
+## **Conclusion**
+
+Week 2 focuses on building structured, real-world data engineering pipelines. Day 1 (Insurance pipeline) emphasized the importance of cleaning, validation, and step-by-step transformations before analysis, strengthening practical data engineering skills.
 
 ---
 
