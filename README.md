@@ -9,32 +9,34 @@ This repository contains my work for Capgemini Data Engineering Training. The fo
 ```
 capgemini-data-engineering-training/
 │
-├── README.md                         → Project overview and progress
-├── mini-project/                     → Upcoming work
+├── README.md → Project overview and progress
+├── mini-project/ → Upcoming work
 │
-├── week0/                            → SQL & PySpark Foundations
-│   ├── phase0/                       → Databricks Certifications
-│   ├── phase1/                       → Filtering & Selection
-│   ├── phase2/                       → Joins & Aggregations
-│   ├── phase3/                       → ETL Pipeline
-│   ├── phase3A/                      → Data Quality & Cleaning
-│   ├── phase4/                       → Business Pipeline & Analytics
-│   ├── phase4A/                      → Bucketing & Segmentation
-│   ├── phase5/                       → Databricks + Olist Pipeline
-│   └── phase6/                       → Spark Playground Exit Sprint
+├── week0/ → SQL & PySpark Foundations
+│ ├── phase0/ → Databricks Certifications
+│ ├── phase1/ → Filtering & Selection
+│ ├── phase2/ → Joins & Aggregations
+│ ├── phase3/ → ETL Pipeline
+│ ├── phase3A/ → Data Quality & Cleaning
+│ ├── phase4/ → Business Pipeline & Analytics
+│ ├── phase4A/ → Bucketing & Segmentation
+│ ├── phase5/ → Databricks + Olist Pipeline
+│ └── phase6/ → Spark Playground Exit Sprint
 │
-├── week1/                            → Real-world datasets practice
-│   ├── Day1/                         → PySpark data cleaning (customers & orders)
-│   ├── Day2/                         → SQL CASE, GROUP BY & JOINS
-│   ├── Day3/                         → Advanced SQL (CASE, Functions, Window)
-│   ├── Day4/                         → Advanced SQL pipeline (student submission analysis)
-│   ├── Day5/                         → NULL Functions & REGEX
+├── week1/ → Real-world datasets practice
+│ ├── Day1/ → PySpark data cleaning (customers & orders)
+│ ├── Day2/ → SQL CASE, GROUP BY & JOINS
+│ ├── Day3/ → Advanced SQL (CASE, Functions, Window)
+│ ├── Day4/ → Advanced SQL pipeline (student submission analysis)
+│ ├── Day5/ → NULL Functions & REGEX
+│ ├── Day6/ → Car Sales Pipeline Advanced (PySpark + SQL)
 │
-├── week2/                            → Advanced data engineering pipelines
-│   ├── Day1/                         → Insurance data pipeline (cleaning, validation, risk analysis)
+├── week2/ → Advanced data engineering pipelines
+│ ├── Day1/ → Insurance data pipeline (cleaning, validation, risk analysis)
 │
-└── week3/                            → Upcoming work
+└── week3/ → Upcoming work
 ```
+
 
 ---
 
@@ -70,13 +72,11 @@ To build a strong foundation in SQL and PySpark by working through multiple phas
 ## **Technologies Used**
 
 ### PySpark
-
 - DataFrame API
 - Transformations and actions
 - Window functions
 
 ### SQL
-
 - Joins and aggregations
 - Window functions
 - Subqueries
@@ -108,7 +108,8 @@ To apply SQL and PySpark concepts on real-world datasets, focusing on data clean
 * Performed aggregations and joins across multiple datasets
 * Used window functions for ranking and duplicate detection
 * Implemented NULL handling and REGEX for data cleaning
-* Built structured SQL-based data analysis workflows
+* Built an end-to-end PySpark pipeline for car sales analytics (Day 6)
+* Generated business insights such as customer trends, dealer performance, and revenue analysis
 
 ---
 
@@ -123,13 +124,15 @@ To apply SQL and PySpark concepts on real-world datasets, focusing on data clean
 * REGEX for pattern matching and text extraction
 * Handling inconsistent and real-world datasets
 * Analytical SQL problem-solving
+* End-to-end pipeline design using PySpark
+* Multi-table joins with real-world datasets
+* Business-level analytics (customer, dealer, sales insights)
 
 ---
 
 ## **Technologies Used**
 
 ### SQL
-
 * CASE statements
 * Joins and aggregations
 * Window functions
@@ -137,7 +140,6 @@ To apply SQL and PySpark concepts on real-world datasets, focusing on data clean
 * REGEX functions
 
 ### PySpark
-
 * DataFrame transformations
 * Data cleaning and preprocessing
 * Filtering, deduplication, and validation
@@ -168,7 +170,7 @@ To apply SQL and PySpark concepts on real-world datasets, focusing on data clean
 
 ## **Conclusion**
 
-Week 1 focused on applying SQL and PySpark concepts to real-world datasets. It strengthened the ability to clean, transform, and analyze data using structured approaches. The combination of SQL logic, data cleaning techniques, and analytical thinking forms a strong foundation for real-world data engineering tasks.
+Week 1 focused on applying SQL and PySpark concepts to real-world datasets. It strengthened the ability to clean, transform, and analyze data using structured approaches. The week concluded with building a complete data pipeline (Car Sales – Day 6), combining data cleaning, transformations, and analytical insights, bringing together all learned concepts into a practical solution.
 
 ---
 
